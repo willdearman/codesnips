@@ -1,7 +1,7 @@
 
 ## Global configuration
 * git config --global user.name "Will Dearman"
-* git config --global user.email will@willdearman.com
+* git config --global user.email will@host.local
 
 ## Adding a remote repo locally
 * mkdir [name_here]
@@ -11,19 +11,21 @@
 * git pull [name_here] master
 
 ## Adding to the repo
-* git add .
-* git commit -m "Message here"
-* git push'
+````
+git add .
+git commit -m "Message here"
+git push
+````
 
 -----
 ## Add existing local repo to github
 * cd to local directory
-* initialize local repository '''git init'''
-* add files to stage for commit '''git add .'''
-* first commit '''git commit -m "First commit"'''
+* initialize local repository ```git init```
+* add files to stage for commit ```git add .```
+* first commit ```git commit -m "First commit"```
 * add and verify remote
-'''
+```
 git remote add origin remote repository URL
 git remote -v
-'''
-* Push local commit to repo '''git push origin master'''
+```
+* Push local commit to repo ```git push origin master```
